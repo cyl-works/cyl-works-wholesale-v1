@@ -49,7 +49,10 @@ export const ContentBlock: React.FC<
                   )}
 
                   {contentType === 'link' && link && (
-                    <CMSLink className="px-4 py-4 md:px-6" {...link} />
+                    <CMSLink
+                      className="hover:bg-primary hover:text-primary-foreground px-4 py-4 transition-all duration-300 md:px-6"
+                      {...link}
+                    />
                   )}
                 </div>
               )
