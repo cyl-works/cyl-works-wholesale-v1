@@ -69,7 +69,7 @@ const columnFields: Field[] = [
   link({
     overrides: {
       admin: {
-        condition: (_, siblingData: { contentType?: string }) =>
+        condition: (_: any, siblingData: { contentType?: string }) =>
           siblingData?.contentType === 'link',
       },
     },
